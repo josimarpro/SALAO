@@ -1,0 +1,243 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+
+}
+body{
+background-color: rgb(204, 231, 222);
+}
+header{
+background-color: rgb(204, 231, 222);
+
+color:white;
+
+display:flex;
+justify-content:space-between;
+
+align-items:center;
+padding:20px 10%;
+}
+
+.home{
+    font-size: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); 
+    
+}
+
+
+
+.banner{
+height:400px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.5),
+rgba(0,0,0,.5)
+),
+
+url("img/fundo.jpg");
+background-size:90% 98%;
+background-position:center;
+display:flex;
+align-items:center;
+padding: 20px;
+color:rgb(243, 241, 241);
+}
+.texto{
+    font-size: 27px;
+     text-align: center;
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+      padding: 15px;
+     display: flex;
+    justify-content: center;
+    gap: 35px;  
+}
+
+.texto a{
+    display: block;
+    width: 220px;
+    margin: 50px auto 0;
+    padding: 15px;
+    background: #FFD700;
+    color: #000;
+    margin-top: 270%;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+section {
+padding:90px 20%;
+text-align:center;
+
+}
+.endereço{
+   padding:50px 10%;
+text-align:center; 
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.card{
+background:#a5c7ac;
+padding:60px;
+border-radius:15px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+.card:hover {
+  transform: translateY(-10px); /* Move o card 10 pixels para cima */
+  box-shadow: 0 15px 30px rgba(255, 71, 126, 0.2); /* Sombra maior e rosada */
+}
+.btn-whatsapp {
+  position: fixed;
+  bottom: 100px;       /* Distância da borda de baixo */
+  right: 20px;        /* Distância da borda da direita */
+  background-color: #25d366; /* Verde oficial do WhatsApp */
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px; /* Deixa o botão arredondado */
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.galeria{
+display:grid;
+width: 70vw;          /* Ocupa 100% da largura da tela visual */
+ height: 400px;
+ align-items: center;
+grid-template-columns:repeat(6,1fr);
+transition:trasform 0.4s ease ;
+object-fit: cover;
+opacity: 1;
+gap:20px;
+border-radius: 10px;
+cursor: pointer
+
+}
+.galeria img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+object-fit: cover;
+opacity: 1;
+}
+.galeria img:hover {
+  transform: rotate(2deg) scale(1.02); /* Gira 2 graus e cresce 2% */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Cria a sombra de impacto */
+}
+
+
+table{
+width:80%;
+margin:auto;
+border-collapse:collapse;
+
+}
+
+td,th{
+border:10px solid #ddd;
+width: 500px;
+margin: 40px auto;
+padding: 20px;
+background: #ffffff;
+border: 3px solid #d4af37;
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,.2);
+padding: 24px;
+
+}
+
+tr td:hover {
+  transform: translateY(-3px); /* Move o card 10 pixels para cima */
+  box-shadow: 0 15px 30px rgba(255, 71, 126, 0.2); /* Sombra maior e rosada */
+}
+
+iframe{
+width:60%;
+height:300px;
+border:0;
+display: block;
+margin: 0 auto;
+padding-top: 0;
+padding-bottom: 50px; 
+  
+ 
+}
+
+footer{
+background:#030303;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+
+nav{
+
+margin-top:20px;
+
+}
+
+
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.galeria{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.banner{
+
+height:400px;
+
+}
+
+
+
+}
